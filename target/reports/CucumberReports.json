@@ -1,0 +1,156 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "for realizado uma requisicao do tipo post do token e o token e armazenado",
+            "match": {
+              "location": "steps.TokenSteps.forRealizadoUmaRequisicaoDoTipoPostDoTokenEOTokenEArmazenado()"
+            },
+            "keyword": "Quando "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T00:50:47.386Z",
+        "line": 8,
+        "name": "Valida JsonPlaceHolder Map",
+        "description": "",
+        "id": "jsonplaceholdermap-com-token;valida-jsonplaceholder-map",
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que seja preenchidos os campos do JsonPlaceHolderMap",
+            "match": {
+              "location": "steps.JsonPlaceHolderMapSteps.queSejaPreenchidosOsCamposDoJsonPlaceHolderMap()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "forem alterados os campos do JsonPlaceHolderMap",
+            "match": {
+              "location": "steps.JsonPlaceHolderMapSteps.foremAlteradosOsCamposDoJsonPlaceHolderMap(java.util.LinkedHashMap\u003cjava.lang.String, java.lang.Object\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "nome",
+                  "Jonatas"
+                ]
+              },
+              {
+                "cells": [
+                  "idade",
+                  "29"
+                ]
+              }
+            ],
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "for realizado uma requisicao do tipo post do JsonPlaceHolderMap",
+            "match": {
+              "location": "steps.JsonPlaceHolderMapSteps.forRealizadoUmaRequisicaoDoTipoPostDoJsonPlaceHolderMap()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "o sistema devolve o satus 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 26
+                }
+              ],
+              "location": "steps.GenericSteps.oSistemaDevolveOSatus(java.lang.Integer)"
+            },
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "o sistema devolve o campo \"nome\" com o valor \"Jonatas\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nome\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"Jonatas\"",
+                  "offset": 45
+                }
+              ],
+              "location": "steps.GenericSteps.oSistemaDevolveOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "o sistema devolve o campo \"idade\" com o valor \"29\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"idade\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"29\"",
+                  "offset": 46
+                }
+              ],
+              "location": "steps.GenericSteps.oSistemaDevolveOCampoComOValor(java.lang.String,java.lang.String)"
+            },
+            "keyword": "E "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@JsonPlaceHolderMap"
+          }
+        ]
+      }
+    ],
+    "name": "JsonPlaceHolderMap com Token",
+    "description": "",
+    "id": "jsonplaceholdermap-com-token",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/features/jsonPlaceHolderMap.feature",
+    "tags": []
+  }
+]
